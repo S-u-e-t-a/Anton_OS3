@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace os_Lab3
 {
@@ -47,14 +44,18 @@ namespace os_Lab3
             Console.ForegroundColor = ConsoleColor.Gray;
             InputOutput(16, memoryFIFO4); // вывод информации
             analisysFour[0] = FIFO.FourPlacesInMemory(pages, memoryFIFO4); // работа алгоритма
-
+            Console.WriteLine("\nНажмите любую клавишу для продолжения ");
+            Console.ReadKey();
+            Console.Clear();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nFIFO5", analisysFour[0]);
             Console.ForegroundColor = ConsoleColor.Gray;
             InputOutput(16, memoryFIFO5);
             analisysFife[0] = FIFO.FifePlacesInMemory(pages, memoryFIFO5);
-
+            Console.WriteLine("\nНажмите любую клавишу для продолжения ");
+            Console.ReadKey();
+            Console.Clear();
 
             //LRU
             Console.ForegroundColor = ConsoleColor.Green;
@@ -62,14 +63,18 @@ namespace os_Lab3
             Console.ForegroundColor = ConsoleColor.Gray;
             InputOutput(16, memoryLRU4);
             analisysFour[1] = LRU.FourPlacesInMemory(pages, memoryLRU4);
-
+            Console.WriteLine("\nНажмите любую клавишу для продолжения ");
+            Console.ReadKey();
+            Console.Clear();
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nLRU5", analisysFour[0]);
             Console.ForegroundColor = ConsoleColor.Gray;
             InputOutput(16, memoryLRU5);
             analisysFife[1] = LRU.FifePlacesInMemory(pages, memoryLRU5);
-
+            Console.WriteLine("\nНажмите любую клавишу для продолжения ");
+            Console.ReadKey();
+            Console.Clear();
 
             //Анализ алгоритмов
             if (analisysFour[0] < analisysFour[1])

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace os_Lab3
 {
@@ -37,7 +34,7 @@ namespace os_Lab3
                     memory[memory.Count - 1] = swaping; // самое новое - то что переместили внутри памяти
                     // при этом прерывания не произошло, поэтому тэг остаётся пустым
                 }
-                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2} Память: {3}", 
+                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2}, Память: {3}", 
                     interruptionTag, k, pages[k], string.Join(",", memory)); // информация о шаге
             }
             Console.Write("\n");
@@ -89,7 +86,7 @@ namespace os_Lab3
                 // чтобы ее можно было занять при будущей подгрузке в память нужной страницы
                 // чтобы посмотреть как  и зачем это: поставьте в ЛИСТЕ pages нулевой элемент например 9
 
-                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2} Память: {3}", 
+                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2}, Память: {3}", 
                     interruptionTag, k, pages[k], string.Join(",", memory)); // вывод информации о шаге
             }
             Console.Write("\n");

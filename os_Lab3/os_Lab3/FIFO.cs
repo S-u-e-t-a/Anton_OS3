@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace os_Lab3
 {
@@ -27,7 +24,7 @@ namespace os_Lab3
                     memory[memory.Count-1] = pages[k]; // самый новый элемент это собственно страница к которой сейчас обращаемся
                     interruptionTag = "[ПР] "; // тег прерывания теперь говорит о том что здесь оно было
                 }
-                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2} Память: {3}", 
+                Console.WriteLine("{0}Номер обращения: {1}, Страница: {2}, Память: {3}", 
                     interruptionTag, k, pages[k], string.Join(",", memory)); // вывод информации о данном обращении
             }
             Console.Write("\n");
